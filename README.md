@@ -9,6 +9,8 @@ Deployment
 
 ``chmod -R 775 /var/www/storage /var/www/bootstrap/cache``
 
+``cp .env.example .env``
+
 ```composer install```
 
 ```php artisan migrate```
