@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use App\Http\Requests\RegistrationRequest;
 use App\Services\RegistrationService;
 use Inertia\Inertia;
+use Inertia\Response;
 
 class RegistrationController extends Controller
 {
-    public function register(RegistrationRequest $request, RegistrationService $registrationService): \Inertia\Response
+    public function register(RegistrationRequest $request, RegistrationService $registrationService): Response
     {
 
         $registrationService->setUsername($request->get('username'));

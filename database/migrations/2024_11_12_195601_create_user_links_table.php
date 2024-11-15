@@ -18,8 +18,6 @@ return new class extends Migration
             $table->boolean('is_active')->default(true);
             $table->dateTime('expires_at');
             $table->timestamps();
-
-//            $table->index(['user_id', 'is_active', 'expires_at']);
         });
     }
 
